@@ -1,0 +1,238 @@
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop
+$ cd SI_2024_lab1_226033
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033
+$ git init
+Initialized empty Git repository in C:/Users/UserPC/Desktop/SI_2024_lab1_226033/.git/
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git clone https://github.com/angelajovanoska/SI_2024_lab1_226033.git
+Cloning into 'SI_2024_lab1_226033'...
+warning: You appear to have cloned an empty repository.
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git remote add origin https://github.com/angelajovanoska/SI_2024_lab1_226033.git
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ -
+bash: -: command not found
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git add README.md
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 6c42645] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git add *
+warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SILab1_1.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches it
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git commit -m "Add starter code"
+[master 6ac9fc3] Add starter code
+ 3 files changed, 47 insertions(+)
+ create mode 100644 SILab1Main.java
+ create mode 100644 SILab1_1.java
+ create mode 100644 SILab1_2.java
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git push -u origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 1.13 KiB | 1.13 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/angelajovanoska/SI_2024_lab1_226033.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git branch bug1
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git branch bug2
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug1)
+$ git add SILab1_1.java
+warning: in the working copy of 'SILab1_1.java', LF will be replaced by CRLF the next time Git touches it
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug1)
+$ git commit -m "Fix wrong condition in filterOddLengthStrings"
+[bug1 2963227] Fix wrong condition in filterOddLengthStrings
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug2)
+$ git add SILab1_2.java
+warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches it
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug2)
+$ git commit -m "Fix wrong condition in makeBigStringFrom"
+[bug2 c0b8c6d] Fix wrong condition in makeBigStringFrom
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug2)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug1)
+$ git add SILab1Main.java
+warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touches it
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug1)
+$ git commit -m "Call method filterOddLengthStrings"
+[bug1 7ed1ab5] Call method filterOddLengthStrings
+ 1 file changed, 1 insertion(+)
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug2)
+$ git add SILab1Main.java
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug2)
+$ git commit -m "Call method makeBigStringFrom"
+[bug2 5a30c00] Call method makeBigStringFrom
+ 1 file changed, 1 insertion(+)
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug2)
+$ git push -u origin bug1
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 729 bytes | 729.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/angelajovanoska/SI_2024_lab1_226033/pull/new/bug1
+remote:
+To https://github.com/angelajovanoska/SI_2024_lab1_226033.git
+ * [new branch]      bug1 -> bug1
+branch 'bug1' set up to track 'origin/bug1'.
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug2)
+$ git push -u origin bug2
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 671 bytes | 671.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/angelajovanoska/SI_2024_lab1_226033/pull/new/bug2
+remote:
+To https://github.com/angelajovanoska/SI_2024_lab1_226033.git
+ * [new branch]      bug2 -> bug2
+branch 'bug2' set up to track 'origin/bug2'.
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git merge bug1
+Updating 6ac9fc3..7ed1ab5
+Fast-forward
+ SILab1Main.java | 1 +
+ SILab1_1.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git push -u origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/angelajovanoska/SI_2024_lab1_226033.git
+   6ac9fc3..7ed1ab5  master -> master
+branch 'master' set up to track 'origin/master'.
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git checkout bug2
+Switched to branch 'bug2'
+Your branch is up to date with 'origin/bug2'.
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug2)
+$ git rebase master
+Auto-merging SILab1Main.java
+CONFLICT (content): Merge conflict in SILab1Main.java
+error: could not apply 5a30c00... Call method makeBigStringFrom
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 5a30c00... Call method makeBigStringFrom
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug2|REBASE 2/2)
+$ git add SILab1Main.java
+[detached HEAD 63c70e6] rebase bug1 from master
+ 1 file changed, 1 insertion(+)/c/users/userpc/desktop/SI_2024_lab1_226033 (bug2Successfully rebased and updated refs/heads/bug2.
+$ git rebase --continue
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (bug2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git merge bug2
+Updating 7ed1ab5..63c70e6
+Fast-forward
+ SILab1Main.java | 1 +
+ SILab1_2.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git push -u origin bug2 --force
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 650 bytes | 650.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+To https://github.com/angelajovanoska/SI_2024_lab1_226033.git
+ + 5a30c00...63c70e6 bug2 -> bug2 (forced update)
+branch 'bug2' set up to track 'origin/bug2'.
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$ git push -u origin master --force
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/angelajovanoska/SI_2024_lab1_226033.git
+   7ed1ab5..63c70e6  master -> master
+branch 'master' set up to track 'origin/master'.
+
+UserPC@DESKTOP-VISTEAF MINGW64 /c/users/userpc/desktop/SI_2024_lab1_226033 (master)
+$

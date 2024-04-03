@@ -1,0 +1,58 @@
+1. Креиран GitHub профил со име angelajovanoska и инсталиран Git локално.
+2. Во setting променето името во master.
+3. Креирано repo со име SI_2024_lab1_226033 (private - после 14.04.2024 ќе е public)
+4. Креирано локално директориум на дескопт.
+git init - иницијализирано
+5. Поврзано
+git remote add origin https://github.com/angelajovanoska/SI_2024_lab1_226033.git
+6. Креирано README.md со име, презиме, индекс
+git add README.md
+git commit -m "Initial commit"
+7. Преземени 3 фајла
+git add *
+git commit -m "Add starter code"
+8. Синхронизирано со remote
+git push -u origin master
+9. Креирање 2 нови гранки
+git branch bug1
+git branch bug2
+10. Префрлање на гранка bug1
+git checkout bug1
+11. Грешката е кај проверката, се проверува дали е парен бројот на карактери а треба непарен значи наместо == треба !=
+git add SILab1_1.java
+git commit -m "Fix wrong condition in filterOddLengthStrings"
+12. Префрлање на гранка bug2
+git checkout bug2
+13. Грешката е кај проверката, се проверува дали бројот на карактери е помал од минималното а треба поголем значи наместо < треба >
+git add SILab1_2.java
+git commit -m "Fix wrong condition in makeBigStringFrom"
+14. git checkout bug1
+15. Додадено System.out.println(SILab1_1.filterOddLengthStrings(list)); на 16та линија
+git add SILab1Main.java
+git commit -m "Call method filterOddLengthStrings"
+16. git checkout bug2
+17. Додадено System.out.println(SILab1_2.makeBigStringFrom(list)); на 16та линија
+git add SILab1Main.java
+git commit -m "Call method makeBigStringFrom"
+18. 
+git push -u origin bug1
+git push -u origin bug2
+19. git checkout master
+20. git merge bug1
+21. git push -u origin master
+22. git checkout bug2
+23. git rebase master
+Се појави конфликт, ги задржав двете промени на 16та и 17та линија.
+git add SILab1Main.java
+git rebase --continue
+со порака rebase bug1 from master (пораката е утната, требаше да биде bug2)
+24. git checkout master
+25. git merge bug2
+26. git push -u origin bug2 --force
+git push -u origin master --force
+28. креиран нов logs.txt фајл и прекопирано се од git bash
+креиран 226033.txt и прекопирани овие notes
+git add logs.txt
+git add 226033.txt
+git commit -m "Final commit"
+git push -u origin master
